@@ -1,0 +1,510 @@
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif
+}
+body {
+    margin: 0
+}
+
+dl,
+menu,
+ol,
+ul {
+    margin: 0
+}
+dd {
+    margin: 0 0 0 40px
+}
+menu,
+ol,
+ul {
+    padding: 0 0 0 0
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+table,
+th,
+td,
+caption,
+hr {
+    margin: 0;
+    padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+table,
+fieldset,
+figure,
+pre,
+.form-fields>li {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem
+}
+
+li>ul,
+li>ol {
+    margin: 0
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+img[width],
+img[height] {
+    max-width: none
+}
+.img-circle{border-radius:100%}
+.img-right {
+    float: right;
+    margin-bottom: 24px;
+    margin-left: 24px
+}
+.img-left {
+    float: left;
+    margin-right: 24px;
+    margin-bottom: 24px
+}
+.img-center {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-left: auto;
+}
+.img-short {
+    height: 140px;
+}
+.img-medium {
+    height: 240px;
+}
+.img-tall {
+    height: 360px;
+}
+
+html.fsvs {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden
+}
+html.fsvs #fsvs-body {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%
+}
+html.fsvs #fsvs-body>* {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000
+}
+html.fsvs.no-hijack {
+    overflow: auto;
+    position: relative
+}
+html.fsvs.no-hijack #fsvs-body {
+    position: static;
+    transition: none !important;
+    -webkit-transition: none !important;
+    -webkit-transform: none !important;
+    transform: none !important
+}
+html.fsvs.no-hijack #fsvs-pagination {
+    display: none
+}
+html.fsvs #fsvs-pagination {
+    margin: 0;
+    padding: 8px 4px;
+    position: fixed;
+    height: auto;
+    right: -100px;
+    top: 50%;
+    z-index: 999;
+    width: 32px
+}
+html.fsvs #fsvs-pagination li {
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 0 2px 0;
+    cursor: pointer
+}
+html.fsvs #fsvs-pagination li>span {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid white;
+    display: block
+}
+html.fsvs #fsvs-pagination li>span>span {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    border: 1px solid white;
+    display: block;
+    margin: 4px
+}
+html.fsvs #fsvs-pagination li.active>span {
+    border: 1px dashed white
+}
+html.fsvs #fsvs-pagination li.active>span>span {
+    background: white
+}
+html.fsvs #fsvs-pagination li:last-child {
+    margin: 0
+}
+html.fsvs.demo #fsvs-body>.slide {
+    padding: 40px;
+    text-align: center
+}
+html.fsvs.demo #fsvs-body>.slide h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 38px;
+    font-size: 2.375rem;
+    line-height: 1.26316
+}
+html.fsvs.demo #fsvs-body>.slide p {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 1.09091;
+    color: white
+}
+html.fsvs.demo #fsvs-body>.slide.nth-class-1 {
+    background: #F97F06
+}
+html.fsvs.demo #fsvs-body>.slide.nth-class-2 {
+    background: #72286F
+}
+html.fsvs.demo #fsvs-body>.slide.nth-class-3 {
+    background: #DE4C30
+}
+html.fsvs.demo #fsvs-body>.slide pre {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px 60px;
+    margin: 40px 0
+}
+
+
+body.active-nth-slide-1 header h1,
+body.active-nth-slide-1 header a,
+body.active-nth-slide-1 header a:visited {
+    color: #eb7347
+}
+body.active-nth-slide-1 #fsvs-pagination li.active>span>span {
+    background: #F97F06
+}
+body.active-nth-slide-2 header h1,
+body.active-nth-slide-2 header a,
+body.active-nth-slide-2 header a:visited {
+    color: #26a65b
+}
+body.active-nth-slide-2 #fsvs-pagination li.active>span>span {
+    background: #72286F
+}
+body.active-nth-slide-3 header h1,
+body.active-nth-slide-3 header a,
+body.active-nth-slide-3 header a:visited {
+    color: #d24d57
+}
+body.active-nth-slide-3 #fsvs-pagination li.active>span>span {
+    background: #DE4C30
+}
+body.active-nth-slide-4 header h1,
+body.active-nth-slide-4 header a,
+body.active-nth-slide-4 header a:visited {
+    color: #2c3e50
+}
+body.active-nth-slide-4 #fsvs-pagination li.active>span>span {
+    background: #1a242f
+}
+.slide {
+    padding: 0px 40px 0px 100px
+}
+.slide h2 {
+    font-size: 22px;
+    text-transform: uppercase
+}
+.slide *,
+.slide a,
+.slide a:visited {
+    color: white
+}
+
+.slide.nth-class-1 {
+    background: #F97F06
+}
+
+.slide.nth-class-2 {
+    background: #72286F
+}
+
+.slide.nth-class-3 {
+    background: #DE4C30
+}
+
+.slide.nth-class-4 {
+    background: #2c3e50
+}
+
+.floaty {
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-name: Floating;
+  -ms-animation-duration: 5s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: ease-in-out;
+  animation-name: Floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* line 212, ../scss/vd.scss */
+.floatytwo {
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 8s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-name: Floating;
+  -ms-animation-duration: 8s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: ease-in-out;
+  animation-name: Floating;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* line 233, ../scss/vd.scss */
+.floatythr {
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 12s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-name: Floating;
+  -ms-animation-duration: 12s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: ease-in-out;
+  animation-name: Floating;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes Floatingx {
+  /* line 255, ../scss/vd.scss */
+  from {
+    -webkit-transform: translate(0, 0px);
+  }
+
+  /* line 256, ../scss/vd.scss */
+  65% {
+    -webkit-transform: translate(0, 15px);
+  }
+
+  /* line 257, ../scss/vd.scss */
+  to {
+    -webkit-transform: translate(0, 0px);
+  }
+}
+
+@-moz-keyframes Floatingx {
+  /* line 261, ../scss/vd.scss */
+  from {
+    -moz-transform: translate(0, 0px);
+  }
+
+  /* line 262, ../scss/vd.scss */
+  65% {
+    -moz-transform: translate(0, 15px);
+  }
+
+  /* line 263, ../scss/vd.scss */
+  to {
+    -moz-transform: translate(0, 0px);
+  }
+}
+
+@-ms-keyframes Floatingx {
+  /* line 267, ../scss/vd.scss */
+  from {
+    -ms-transform: translate(0, 0px);
+  }
+
+  /* line 268, ../scss/vd.scss */
+  65% {
+    -ms-transform: translate(0, 15px);
+  }
+
+  /* line 269, ../scss/vd.scss */
+  to {
+    -ms-transform: translate(0, 0px);
+  }
+}
+
+@keyframes Floatingx {
+  /* line 273, ../scss/vd.scss */
+  from {
+    transform: translate(0, 0px);
+  }
+
+  /* line 274, ../scss/vd.scss */
+  65% {
+    transform: translate(0, 15px);
+  }
+
+  /* line 275, ../scss/vd.scss */
+  to {
+    transform: translate(0, 0px);
+  }
+}
+.spinner {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 2000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 2000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+  /* line 359, ../scss/vd.scss */
+  from {
+    -ms-transform: rotate(0deg);
+  }
+
+  /* line 360, ../scss/vd.scss */
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  /* line 363, ../scss/vd.scss */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 364, ../scss/vd.scss */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 367, ../scss/vd.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 368, ../scss/vd.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  /* line 371, ../scss/vd.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 372, ../scss/vd.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
