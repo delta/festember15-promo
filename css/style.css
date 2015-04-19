@@ -243,6 +243,12 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-2 {
 html.fsvs.demo #fsvs-body>.slide.nth-class-3 {
     background: #DE4C30
 }
+html.fsvs.demo #fsvs-body>.slide.nth-class-4 {
+    background: #1a242f
+}
+html.fsvs.demo #fsvs-body>.slide.nth-class-5 {
+    background: #ea222f
+}
 html.fsvs.demo #fsvs-body>.slide pre {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -287,6 +293,18 @@ body.active-nth-slide-4 header a:visited {
 body.active-nth-slide-4 #fsvs-pagination li.active>span>span {
     background: #1a242f
 }
+
+body.active-nth-slide-5 header h1,
+body.active-nth-slide-5 header a,
+body.active-nth-slide-5 header a:visited {
+    color: #2c4450
+}
+body.active-nth-slide-5 #fsvs-pagination li.active>span>span {
+        background-image: url("img/qm.gif");
+background-size: 20px 37px;
+    background-color: #cccccc;
+}
+
 .slide {
     padding: 0px 40px 0px 100px
 }
@@ -314,6 +332,12 @@ body.active-nth-slide-4 #fsvs-pagination li.active>span>span {
 
 .slide.nth-class-4 {
     background: #2c3e50
+}
+
+.slide.nth-class-5 {
+    background-image: url("img/qm.gif");
+background-size: 20px 37px;
+    background-color: #cccccc;
 }
 
 .floaty {
