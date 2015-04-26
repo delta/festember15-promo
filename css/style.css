@@ -871,3 +871,5 @@ background-size: 20px 37px;
     transform: rotate(360deg);
   }
 }
+@media screen and (max-device-width: 320px) {
+}

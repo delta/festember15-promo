@@ -1,7 +1,9 @@
 
 jQuery(document).ready( function($) {
 
-
+var x = 0, y = 0,
+    vx = 0, vy = 0,
+  ax = 0, ay = 0;
 //start of eye
 
 var DrawEye = function(eyecontainer, pupil, eyeposx, eyeposy, eyer){
@@ -41,6 +43,47 @@ var DrawEye = function(eyecontainer, pupil, eyeposx, eyeposy, eyer){
     }
   });
   
+  //accelerometer
+ if (window.DeviceMotionEvent != undefined) {
+  window.ondevicemotion = function(e) {
+    ax = event.accelerationIncludingGravity.x * 5;
+    ay = event.accelerationIncludingGravity.y * 5;
+  
+ var landscapeOrientation = window.innerWidth/window.innerHeight > 1;
+    if ( landscapeOrientation) {
+      vx = vx + ay;
+      vy = vy + ax;
+    } else {
+      vy = vy - ay;
+      vx = vx + ax;
+    }
+    vx = vx * 0.98;
+    vy = vy * 0.98;
+    y = parseInt(y + vy / 50);
+    x = parseInt(x + vx / 50);
+    
+    
+    
+   var pupil = $(pupil);
+  var xp = center.x, yp = center.y;
+  var loop = setInterval(function(){
+    // change 1 to alter damping/momentum - higher is slower
+    xp += (x - xp) / 1;
+    yp += (y - yp) / 1;
+    pupil.css({left:xp, top:yp});    
+  }, 1);
+
+    
+  
+} 
+
+  }
+
+
+   
+
+
+
   // Update pupil location
   var pupil = $(pupil);
   var xp = center.x, yp = center.y;
