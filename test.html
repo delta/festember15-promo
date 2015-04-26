@@ -1,13 +1,18 @@
 <html>
 <head>
 <style type="text/css">
+body
+{
+	margin: 0;
+	overflow: hidden;
+}
 	.button {
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 600px;
+	height: 630px;
 	background-image: url("img/1.png");
-	background-size: 1000px 600px;
+	background-size: 1000px 630px;
 	color: black;
 	font-family: sans-serif;
 	text-align: center;
@@ -19,24 +24,25 @@
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 800px;
-	top:-130px;
+	height: 700px;
+	z-index:99;
+	top:-65px;
 	background-image: url("img/horse.png")  ;
 	background-repeat: no-repeat;
-	background-size: 1100px 800px;
+	background-size: 1000px 700px;
 	color: black;
 	font-family: sans-serif;
 	text-align: center;
-	line-height: 30px;
+	line-height: 0px;
 	
 }
 .button2 {
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 600px;
+	height: 630px;
 	background-image: url("img/2.png");
-	background-size: 1000px 600px;
+	background-size: 1000px 630px;
 	color: black;
 	font-family: sans-serif;
 	text-align: center;
@@ -47,16 +53,69 @@
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 600px;
+	height: 630px;
 	background-image: url("img/3.png");
-	background-size: 1000px 600px;
+	background-size: 1000px 630px;
 	color: black;
 	font-family: sans-serif;
 	text-align: center;
 	line-height: 30px;
 	background-position: 0 0;
 }
+.button4 {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 630px;
+	background-image: url("img/4.png");
+	background-size: 1000px 630px;
+	background-repeat: no-repeat;
+	color: black;
+	top:0px;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 30px;
+	background-position: 0 0;
+}
+.button5 {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 630px;
+	background-image: url("img/5.png");
+	background-size: 1000px 630px;
+	color: black;
+	top:0px;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 30px;
+	background-position: 0 0;
+}
+.button6 {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 630px;
+	background-image: url("img/6.png");
+	background-size: 1000px 630px;
+	color: black;
+	top:11px;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 30px;
+	background-position: 0 0;
+}
+.sun
+{
+	display:block;
+	position: absolute;
+	width:150px;
+	height:150px;
+	background-image: url('img/sun1.png');
+	background-repeat: no-repeat;
+	background-size: 150px 150px;
 
+}
 .loading1 {
 	-webkit-animation: loading 4s infinite linear;
 	-moz-animation: loading 4s infinite linear;
@@ -78,7 +137,72 @@
 	-o-animation: loading 12s infinite linear;
 	animation: loading 12s infinite linear;
 }
+.spinner {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 6s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 6s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
+@-ms-keyframes spin {
+  /* line 359, ../scss/vd.scss */
+  from {
+    -ms-transform: rotate(0deg);
+  }
+
+  /* line 360, ../scss/vd.scss */
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  /* line 363, ../scss/vd.scss */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 364, ../scss/vd.scss */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 367, ../scss/vd.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 368, ../scss/vd.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  /* line 371, ../scss/vd.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 372, ../scss/vd.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes "loading" {
  0% {
     background-position: 0 0;
@@ -131,9 +255,13 @@
 </style>
 </head>
 <body bgcolor="#FAF7A8">
+<div class="sun spinner"></div>
 <div class="button loading3"></div>
 <div class="button2 loading2"></div>
 <div class="button3 loading1"></div>
+<div class="button4"></div>
+<div class="button5"></div>
+<div class="button6"></div>
 <div class="sil"></div>
 </body>
 </html>
