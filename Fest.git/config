@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = https://github.com/ganyguru/Fest.git
+	fetch = +refs/*:refs/*
+	mirror = true
+	pushurl = https://github.com/ganyguru/ganyguru.github.io/tree/master/Fest

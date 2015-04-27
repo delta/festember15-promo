@@ -260,7 +260,7 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-4 {
     background: #FAF7A8
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-5 {
-    background: #ea222f
+    background: #FAF7A8
 }
 html.fsvs.demo #fsvs-body>.slide pre {
     -webkit-border-radius: 5px;
@@ -597,7 +597,13 @@ background-size: 20px 37px;
   background: #fff;
   box-shadow: 0 0 0 9px #fff, 0 1px 3px 9px rgba(0,0,0,0.3);
 }
-
+.slot
+{
+  width:900px;
+  height:700px;
+  background-image: url('../img/nodots.png');
+  background-size: 900px 700px;
+}
 @media screen and (max-width: 1310px){
   .st-wrapper .st-item {
     width: 300px;
