@@ -257,7 +257,7 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-3 {
     background: #DE4C30
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-4 {
-    background: #1a242f
+    background: #FAF7A8
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-5 {
     background: #ea222f
@@ -323,7 +323,7 @@ body.active-nth-slide-4 header a:visited {
     color: #2c3e50
 }
 body.active-nth-slide-4 #fsvs-pagination li.active>span>span {
-    background: #1a242f
+    background: #FAF7A8
 }
 
 body.active-nth-slide-5 header h1,
@@ -824,7 +824,24 @@ background-size: 20px 37px;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
+.spinner2 {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 6s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 6s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 @-ms-keyframes spin {
   /* line 359, ../scss/vd.scss */
   from {
@@ -902,7 +919,7 @@ background-size: 20px 37px;
   font-family: sans-serif;
   text-align: center;
   line-height: 0px;
-  background-position: 0 -85;
+  background-position:  0 -55;
 }
 .button2 {
   display: block;
@@ -937,13 +954,13 @@ background-size: 20px 37px;
   position: absolute;
   width: 100%;
   height: 630px;
- left:300px;
- top:100px;
+ left:100px;
+
   background-image: url("../img/4.png");
-  background-size: 900px 632px;
+  background-size: 1300px 632px;
   background-repeat: no-repeat;
   color: black;
-  top:0px;
+  top:30px;
   font-family: sans-serif;
   text-align: center;
   line-height: 30px;
@@ -957,7 +974,7 @@ background-size: 20px 37px;
   background-image: url("../img/5.png");
   background-size: 1000px 630px;
   color: black;
-  top:0px;
+  bottom:15;
   
   font-family: sans-serif;
   text-align: center;
@@ -969,11 +986,11 @@ background-size: 20px 37px;
   position: absolute;
   width: 100%;
   height: 630px;
-
+  bottom:0;
   background-image: url("../img/6.png");
   background-size: 1000px 630px;
   color: black;
-  top:11px;
+  
   font-family: sans-serif;
   text-align: center;
   line-height: 30px;
