@@ -257,10 +257,10 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-3 {
     background: #DE4C30
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-4 {
-    background: #FAF7A8
+    background: #FC7D3F
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-5 {
-    background: #FAF7A8
+    background: #EBE88C
 }
 html.fsvs.demo #fsvs-body>.slide pre {
     -webkit-border-radius: 5px;
@@ -831,20 +831,38 @@ background-size: 20px 37px;
   animation-timing-function: linear;
 }
 .spinner2 {
+  -webkit-animation-name: spin2;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin2;
+  -moz-animation-duration: 20s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin2;
+  -ms-animation-duration: 20s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.spinner3 {
   -webkit-animation-name: spin;
-  -webkit-animation-duration: 6s;
+  -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-name: spin;
-  -moz-animation-duration: 6s;
+  -moz-animation-duration: 20s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: linear;
   -ms-animation-name: spin;
-  -ms-animation-duration: 6s;
+  -ms-animation-duration: 20s;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
   animation-name: spin;
-  animation-duration: 6s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -895,6 +913,53 @@ background-size: 20px 37px;
     transform: rotate(360deg);
   }
 }
+
+@-ms-keyframes spin2 {
+
+  from {
+    -ms-transform: rotate(360deg);
+  }
+
+
+  to {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes spin2 {
+  
+  from {
+    -moz-transform: rotate(360deg);
+  }
+
+    to {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes spin2 {
+ 
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+
+  
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@keyframes spin2 {
+  
+  from {
+    transform: rotate(360deg);
+  }
+
+ 
+  to {
+    transform: rotate(0deg);
+  }
+}
 .button {
   display: block;
   left: 0;
@@ -920,12 +985,25 @@ background-size: 20px 37px;
  
   background-image: url("../img/horse.png")  ;
   background-repeat: no-repeat;
-  background-size: 1000px 700px;
+  background-size: 900px 600px;
   color: black;
   font-family: sans-serif;
   text-align: center;
   line-height: 0px;
-  background-position:  0 -55;
+  background-position:  0 45;
+}
+.movit {
+  display: block;
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/png1.png");
+  background-size: 1000px 400px;
+  opacity: 0.4;
+  background-position: 0 0;
 }
 .button2 {
   display: block;
@@ -977,11 +1055,11 @@ background-size: 20px 37px;
   position: absolute;
   width: 100%;
   height: 630px;
+  bottom:0;
   background-image: url("../img/5.png");
   background-size: 1000px 630px;
   color: black;
-  bottom:15;
-  
+  z-index:40;
   font-family: sans-serif;
   text-align: center;
   line-height: 30px;
@@ -992,7 +1070,7 @@ background-size: 20px 37px;
   position: absolute;
   width: 100%;
   height: 630px;
-  bottom:0;
+
   background-image: url("../img/6.png");
   background-size: 1000px 630px;
   color: black;
@@ -1006,12 +1084,87 @@ background-size: 20px 37px;
 {
   display:block;
   position: absolute;
-  width:150px;
-  height:150px;
-  background-image: url('../img/sun1.png');
-  background-repeat: no-repeat;
-  background-size: 150px 150px;
+  width:160px;
+  height:160px;
+  background-image: url('../img/h9.png');
 
+  background-repeat: no-repeat;
+  background-size: 160px 160px;
+
+}
+.isun
+{
+  display:block;
+  position: absolute;
+  width:120px;
+  height:120px;
+  margin-top: 15px;
+  margin-left: 20px;
+  
+  background-image: url('../img/h10.png');
+  background-repeat: no-repeat;
+  background-size: 120px 120px;
+
+}
+.chip
+{
+  
+  position: relative;
+  width:160px;
+
+  height:160px;
+  background-repeat: no-repeat;
+  background-size:160px 160px;
+
+}
+.chip img
+{
+  top:0;
+  left:0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cdesc
+{
+  display: inline-block;
+  position: relative;
+  width:160px;
+
+  height:auto;
+  
+}
+.cdesc b
+{
+  color: #000 !important;
+}
+.cont
+{
+  z-index:99;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width:70px;
+  height: 70px;
+  margin-left: -35px;
+  margin-top: -35px;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  border-radius: 100%;
+  -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+  
+}
+.cont:hover
+{
+  -webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+filter: grayscale(0%);
 }
 .loading1 {
   -webkit-animation: loading 4s infinite linear;
