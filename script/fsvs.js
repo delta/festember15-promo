@@ -9,6 +9,15 @@
 
 ;( function($){
 
+//media queries
+
+if (window.matchMedia('(min-width: 1000px)').matches)
+{
+
+
+
+
+
 	$.fn.fsvs = function( options ) {
 
 		options = options || {};
@@ -557,4 +566,7 @@
 
 	};
 
+
+
+}
 })( jQuery );

@@ -1,6 +1,6 @@
 
 jQuery(document).ready( function($) {
-
+window.location.href="#slide-1";
 var x = 0, y = 0,
     vx = 0, vy = 0,
   ax = 0, ay = 0;
@@ -156,7 +156,7 @@ var eye = new DrawEye("eye51", "pupil51", 338, 304, 30);
 	if( $.fn.fsvs ) {
 		var slider = $.fn.fsvs({
 			speed : 1000,
-			nthClasses : 6,
+			nthClasses : 5,
 			mouseDragEvents : false
 		});
 	}
@@ -184,5 +184,5 @@ var eye = new DrawEye("eye51", "pupil51", 338, 304, 30);
 
 	});
 
-	$(window).scrollTop($('#slide-1').offset().top);
+
 });

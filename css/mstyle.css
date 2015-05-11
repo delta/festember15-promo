@@ -143,7 +143,8 @@ html.fsvs {
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 html.fsvs #fsvs-body {
     -webkit-backface-visibility: hidden;
@@ -158,7 +159,8 @@ html.fsvs #fsvs-body {
 html.fsvs #fsvs-body>* {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+   overflow-x:hidden;
+    overflow-y:auto;
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000
 }
@@ -306,7 +308,7 @@ body.active-nth-slide-2 header a:visited {
     color: #26a65b
 }
 body.active-nth-slide-2 #fsvs-pagination li.active>span>span {
- 
+  background: #72286F url('.././img/monster.png') no-repeat left top;
     
 }
 body.active-nth-slide-3 header h1,
@@ -332,7 +334,8 @@ body.active-nth-slide-5 header a:visited {
     color: #2c4450
 }
 body.active-nth-slide-5 #fsvs-pagination li.active>span>span {
-        
+        background-image: url("../img/qm.gif");
+background-size: 20px 37px;
     background-color: #cccccc;
 }
 
