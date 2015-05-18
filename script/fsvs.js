@@ -11,8 +11,7 @@
 
 //media queries
 
-if (window.matchMedia('(min-width: 1000px)').matches)
-{
+
 
 
 
@@ -568,5 +567,4 @@ if (window.matchMedia('(min-width: 1000px)').matches)
 
 
 
-}
 })( jQuery );
