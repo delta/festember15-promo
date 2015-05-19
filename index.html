@@ -17,11 +17,7 @@
                   replace(/\*\/[^\/]+$/, '');
             }
             var fsvsHTML = hereDoc(function() {/*!
-              <div id="fsvs-body" style="transition: all 1s; -webkit-transition: all 1s; -webkit-transform: translate3d(0px, -100%, 0px); transform: translate3d(0px, -100%, 0px);">
-                  <!-- Slide 1 -->
-                  <div class="slide nth-class-1">
-                      <img src="img/loading.png" style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" class="floaty" width="100px" /> 
-                  </div>
+             
                   <!-- Slide 2 -->
                   <div class="slide nth-class-2">
                       <div id="monstereyes"></div>
@@ -188,7 +184,6 @@
 
                       <div class="sil"></div>
                   </div>
-              </div>
               <!-- FSVS Bubbles -->
               <ul id="fsvs-pagination   active" style="margin-top: -53px; right: 25px;"><li class="pagination-link"><span style="transition: all 1s; -webkit-transition: all 1s;"><span style="transition: all 1s; -webkit-transition: all 1s;"></span></span></li><li class="pagination-link"><span style="transition: all 1s; -webkit-transition: all 1s;"><span style="transition: all 1s; -webkit-transition: all 1s;"></span></span></li><li class="pagination-link"><span style="transition: all 1s; -webkit-transition: all 1s;"><span style="transition: all 1s; -webkit-transition: all 1s;"></span></span></li><li class="pagination-link"><span style="transition: all 1s; -webkit-transition: all 1s;"><span style="transition: all 1s; -webkit-transition: all 1s;"></span></span></li>><li class="pagination-link"><span style="transition: all 1s; -webkit-transition: all 1s;"><span style="transition: all 1s; -webkit-transition: all 1s;"></span></span></li></ul>
 
@@ -232,7 +227,7 @@
                 preload.loadFile("img/hallo.png");
                 preload.loadFile("img/horse.png");
                 preload.loadFile("img/lever.png");
-                preload.loadFile("img/loading.png");
+                //preload.loadFile("img/loading.png");
                 preload.loadFile("img/machine.png");
                 preload.loadFile("img/mimg.png");
                 preload.loadFile("img/monster.png");
@@ -249,7 +244,7 @@
             }
             function handleComplete(){
                 alert("done");
-                document.body.innerHTML += fsvsHTML;
+                document.getElementById('fsvs-body').innerHTML += fsvsHTML;
                 $( function() {
                     $( '#st-stack' ).stackslider();
                 });
@@ -265,5 +260,20 @@
         </script>
 </head>
 <body class="active-slide-1 active-nth-slide-1" bgcolor="black" onload="preloadAll();">
+    <div id="fsvs-body" style="transition: all 1s; -webkit-transition: all 1s; -webkit-transform: translate3d(0px, -100%, 0px); transform: translate3d(0px, -100%, 0px);">
+        <!-- Slide 1 -->
+        <div class="slide nth-class-1">
+            <img src="img/loading.png" style="position: absolute;margin: auto;top: 0;left: 0;right: 0;bottom: 0;" class="floaty" width="100px" /> 
+        </div>
+    </div>
+    <script type="text/javascript">
+        if( $.fn.fsvs ) {
+          var slider = $.fn.fsvs({
+            speed : 1000,
+            nthClasses : 5,
+            mouseDragEvents : false
+          });
+        }
+    </script>
 </body>
 </html>
