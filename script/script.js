@@ -180,13 +180,7 @@ var eye = new DrawEye("eye51", "pupil51", 338, 304, 30);
 //end of eye
 
 
-	if( $.fn.fsvs ) {
-		var slider = $.fn.fsvs({
-			speed : 1000,
-			nthClasses : 5,
-			mouseDragEvents : false
-		});
-	}
+	
 
 	if( $.fn.flare ) {
 		var flares = $('.flare').flare();
