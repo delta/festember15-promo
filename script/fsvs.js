@@ -196,7 +196,8 @@
 			var startY = null;
 			$(window).on( "touchstart", function(ev) {
     			var e = ev.originalEvent;
-				if( e.target.nodeName.toLowerCase() !== 'a' ) {
+				var cancelOn = ['a','input','textarea','select','span','div'];
+				if( $.inArray( e.target.nodeName.toLowerCase(), cancelOn ) == -1 ) {
 					var touches = e.touches;
 					if( touches && touches.length ) {
 						startY = touches[0].pageY;
