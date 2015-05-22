@@ -1,5 +1,22 @@
 //media="only screen and (min-width: 1000px), only screen and (min-device-width: 1000px)"
+
+var ui=0;
+function contup() {
+    $('.mcont').animate({
+        scrollTop: $(".mcont").scrollTop()+196
+    }, 500);
+}
+
+
+function contdown() {
+    $('.mcont').animate({
+        scrollTop: $(".mcont").scrollTop()-196
+    }, 500);
+}
 jQuery(document).ready( function($) {
+
+
+
 window.location.href="#slide-1";
 var x = 0, y = 0,
     vx = 0, vy = 0,
