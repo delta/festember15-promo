@@ -137,7 +137,7 @@ li>ol {
   position: relative;
   width: auto;
   height: auto;
-  overflow: auto;
+  overflow: hidden;
 }
 .limg
 {
@@ -303,7 +303,7 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-3 {
     background: #DE4C30
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-4 {
-    background: #FC7D3F
+    background: #121212
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-5 {
     background: #EBE88C
@@ -366,10 +366,10 @@ body.active-nth-slide-3 #fsvs-pagination li.active>span>span {
 body.active-nth-slide-4 header h1,
 body.active-nth-slide-4 header a,
 body.active-nth-slide-4 header a:visited {
-    color: #2c3e50
+    color: #121212
 }
 body.active-nth-slide-4 #fsvs-pagination li.active>span>span {
-    background: #FAF7A8
+    background: #121212
 }
 
 body.active-nth-slide-5 header h1,
@@ -1216,36 +1216,96 @@ background-size: 20px 37px;
   background-size: 120px 120px;
 
 }
+.chdes
+{
+  display: none;
+  top: 0;
+  width: 180px;
+  height: 180px;
+  
+  left:0;
+  z-index:100;
+}
+.scr
+{
+   position: absolute;
+  top: 0;
+  width: 180px;
+  height: 180px;
+  opacity:0.5;
+  left:0;
+  z-index: 100;
+  background: #e6e6e6;
+}
 .chip
 {
   
   position: relative;
-  width:160px;
+  width:180px;
 
-  height:160px;
+  height:180px;
   background-repeat: no-repeat;
   background-size:160px 160px;
+  background-position: 10px 0;
+}
+
+.dummy
+{
+  
+  position: relative;
+  width:160px;
+  border-radius: 100%;
+  height:160px;
+  background: #2C2C2A;
 
 }
+
 .chip img
 {
   top:0;
   left:0;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 160px;
+  height: 160px;
+  left:10px;
 }
 .cdesc
 {
   display: inline-block;
   position: relative;
-  width:160px;
+  width:180px;
 
-  height:auto;
+  height:180px;
+  overflow: hidden;
   
 }
-.cdesc b
+.cdesc:hover .chdes
 {
+  display: block;
+}
+.chdes b
+{
+  z-index: 101;
+  position: absolute;
+  top:7px;
+  left: 5;
+  color: #000 !important;
+}
+.chdes i
+{
+  z-index: 101;
+  position: absolute;
+  top:25px;
+  left: 5;
+  color: #000 !important;
+}
+.chdes p
+{
+  z-index: 101;
+  position: absolute;
+  top:53px;
+  font-size: 15px!important;
+  left: 5;
   color: #000 !important;
 }
 .cont
@@ -1257,27 +1317,26 @@ background-size: 20px 37px;
   transition: all 0.25s ease-in-out;
   position: absolute;
   left: 50%;
+
   top: 50%;
   width:70px;
   height: 70px;
   margin-left: -35px;
-  margin-top: -35px;
+  margin-top: -45px;
   background-repeat: no-repeat;
   background-size: 70px 70px;
   border-radius: 100%;
-  -webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
-filter: grayscale(100%);
+ 
   
 }
-.cont:hover
+
+.ease
 {
-  -webkit-filter: grayscale(0%);
--moz-filter: grayscale(0%);
-filter: grayscale(0%);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
-
-
 .socket {
     border-radius: 50%;
     height: 102px;
@@ -1614,8 +1673,8 @@ filter: grayscale(0%);
 .mcont
 {
   position: absolute;
-  width:160px !important;
-  height:196px !important;
+  width:180px !important;
+  height:310px !important;
   left: 0;
   overflow: hidden;
   margin: auto;
@@ -1667,10 +1726,55 @@ filter: grayscale(0%);
   position: absolute;
   top:250px;
 }
+.chdes
+{
+  height: auto;
+  width: auto;
+  position: relative;
+  display: block;
+}
+.scr
+{
+  display: none;
+
+}
+.chdes b
+{
+  position: relative;
+  color: #fff !important;
+  top: 0;
+  left: 0;
+}
+.chdes i
+{
+  position: relative;
+  color: #fff !important;
+  top: 0;
+  left: 0;
+}
+.chdes p
+{
+  position: relative;
+  color: #fff !important;
+  top: 5;
+  left: 0;
+}
+.cdesc
+{
+  height: 310px;
+}
+.dumm
+{
+  display: none;
+}
 }
 
 @media only screen and (max-device-width: 999px) {
 
+.cdesc
+{
+  height: 310px;
+}
 .scontent
 {
   position: absolute;
@@ -1755,8 +1859,8 @@ filter: grayscale(0%);
 .mcont
 {
   position: absolute;
-  width:160px !important;
-  height:196px !important;
+  width:180px !important;
+  height:310px !important;
   left: 0;
   overflow: hidden;
   margin: auto;
@@ -1765,6 +1869,41 @@ filter: grayscale(0%);
   right: 0; 
   bottom: 0;
 }
+.chdes
+{
+  height: auto;
+  width: auto;
+  position: relative;
+  display: block;
+}
+
+.scr
+{
+  display: none;
+
+}
+.chdes b
+{
+  position: relative;
+  color: #fff !important;
+  top: 0;
+  left: 0;
+}
+.chdes i
+{
+  position: relative;
+  color: #fff !important;
+  top: 0;
+  left: 0;
+}
+.chdes p
+{
+  position: relative;
+  color: #fff !important;
+  top: 5;
+  left: 0;
+}
+
 .bmc
 {
   display: block;
@@ -1800,6 +1939,10 @@ filter: grayscale(0%);
   background-repeat: no-repeat;
   background-size: 200px 200px;
 
+}
+.dumm
+{
+  display: none;
 }
 }
 

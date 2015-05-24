@@ -3,14 +3,14 @@
 var ui=0;
 function contup() {
     $('.mcont').animate({
-        scrollTop: $(".mcont").scrollTop()+196
+        scrollTop: $(".mcont").scrollTop()+310
     }, 500);
 }
 
 
 function contdown() {
     $('.mcont').animate({
-        scrollTop: $(".mcont").scrollTop()-196
+        scrollTop: $(".mcont").scrollTop()-310
     }, 500);
 }
 jQuery(document).ready( function($) {
