@@ -106,7 +106,7 @@ li>ol {
   display: none;
   width: 50px;
   height: 50px;
-  background: #00ff00;
+ 
   float: right;
   position: absolute;
   margin: auto;
@@ -121,7 +121,7 @@ li>ol {
   display: none;
   width: 50px;
   height: 50px;
-  background: #ff0000;
+  
   float: right;
   position: absolute;
   margin: auto;
@@ -641,6 +641,16 @@ background-size: 20px 37px;
 .st-wrapper .st-item a {
   background: #fff;
   box-shadow: 0 0 0 9px #fff, 0 1px 3px 9px rgba(0,0,0,0.3);
+}
+.rev
+{
+ 
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+
 }
 .slot
 {
@@ -1596,10 +1606,14 @@ filter: grayscale(0%);
 .bmc
 {
   display: block;
+  background-image: url('../img/arr.png');
+  background-size: cover;
 }
 .fmc
 {
   display: block;
+  background-image: url('../img/arr.png');
+  background-size: cover;
 }
 .sun
 {
@@ -1724,10 +1738,14 @@ filter: grayscale(0%);
 .bmc
 {
   display: block;
+  background-image: url('../img/arr.png');
+  background-size:cover;
 }
 .fmc
 {
   display: block;
+  background-image: url('../img/arr.png');
+  background-size: cover;
 }
 .sun
 {
