@@ -4,11 +4,7 @@
   font-weight: 400;
   src: url('fonts/engel.woff2') format('woff2');
 }
-@font-face {
-  font-family: 'ww';
-  
-  src: url('fonts/ww.woff');
-}
+
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
@@ -1194,8 +1190,8 @@ background-size: 20px 37px;
   height: auto;
   width:auto;
   color: black;
-  font-family: 'ww';
-  font-size: 20px;
+  
+  font-size: 15px;
   margin-left:10px;
   bottom:200px;
 }
