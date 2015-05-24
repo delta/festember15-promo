@@ -4,6 +4,11 @@
   font-weight: 400;
   src: url('fonts/engel.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'ww';
+  
+  src: url('fonts/ww.woff');
+}
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
@@ -1182,6 +1187,26 @@ background-size: 20px 37px;
  font-size: 20px;
 
 }
+.scontent
+{
+
+  overflow: hidden;
+  height: auto;
+  width:auto;
+  color: black;
+  font-family: 'ww';
+  font-size: 20px;
+  margin-left:10px;
+  bottom:200px;
+}
+.scontent p
+{
+  text-align: center;
+ width:80%;
+ color:black;
+ font-size: 20px;
+
+}
 .isun
 {
   display:block;
@@ -1641,11 +1666,20 @@ filter: grayscale(0%);
   background-size: 200px 200px;
 
 }
+.scontent
+{
+  position: absolute;
+  top:250px;
+}
 }
 
 @media only screen and (max-device-width: 999px) {
 
-
+.scontent
+{
+  position: absolute;
+  top:250px;
+}
 #monstereyes
   {
     display: none;
