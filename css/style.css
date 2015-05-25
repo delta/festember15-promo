@@ -1644,6 +1644,7 @@ background-size: 20px 37px;
   position: absolute;
   width:90%;
   margin-left: 5%;
+  font-size: 15px;
   top:10px;
   }
   .vi
@@ -1662,7 +1663,7 @@ background-size: 20px 37px;
 {
  width:80%;
  color:white;
- font-size: 5px;
+ font-size: 15px !important;
 
 }
 .movit {
@@ -1799,6 +1800,7 @@ background-size: 20px 37px;
   position: absolute;
   width:90%;
   margin-left: 5%;
+  font-size: 15px;
   top:10px;
   }
   .vi
@@ -1853,7 +1855,7 @@ background-size: 20px 37px;
 {
  width:80%;
  color:white;
- font-size: 5px;
+ font-size: 15px !important;
 
 }
 .mcont
