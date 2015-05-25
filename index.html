@@ -30,29 +30,24 @@
 
 		<div id="fsvs-body" style="transition: all 1s; -webkit-transition: all 1s; -webkit-transform: translate3d(0px, -100%, 0px); transform: translate3d(0px, -100%, 0px);">
 			<div class="slide nth-class-1 " >
-
-
-
-
+				<img src="img/loading.png" style="position: absolute;margin: auto;top: 0;left: 0;right: 0; bottom: 0;" class="limg floaty" width="100px" />
 				<script src="script/countdown.js"></script>
-
-				<div class="your-clock"></div>
+				<div id='ctimer'>
 				<script type="text/javascript">
 				    var today = new Date(),
 				        fber = new Date(2015, 08, 24);
 				    var d = (fber - today)/(1000);
-				    var days = d/(1000*60*60*24);
 				    var myCountdown1 = new Countdown({
-				        time:d,
+				        time: d,
 				        hideLine: true,
-				        width: 200,
-				        height: 30,
+				        width: 300,
+				        height: 60,
 				        inline: true,
 				        rangeHi  : "month",
 				        numbers : {
 				            font : "Arial",
 				            color  : "#FFFFFF",
-				            bkgd   : "#365D8B",
+				            bkgd   : "#F97F06",
 				            rounded    : 0.15, // percentage of size 
 				            shadow : {
 				                x : 0,   // x offset (in pixels)
@@ -71,11 +66,10 @@
 				        }  // < - no comma on last item!
 				    });
 				</script>
-				<img src="img/loading.png" style="position: absolute;margin: auto;top: 0;left: 0;right: 0; bottom: 0;" class="limg floaty" width="100px" /> 
+				</div>
+			</style>
 			</div>
 			<div class="slide nth-class-2">
-			
-
 			<div id="monstereyes"></div>
 
 			<div class="catHolder"> 
