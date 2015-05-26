@@ -1233,7 +1233,7 @@ background-size: 20px 37px;
   top: 0;
   width: 180px;
   height: 180px;
-  opacity:0.5;
+  opacity:0.8;
   left:0;
   border-radius: 100%;
   z-index: 100;
@@ -1735,7 +1735,13 @@ background-size: 20px 37px;
 .scontent
 {
   position: absolute;
-  top:250px;
+  top:0;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top:350px;
+
 }
 .chdes
 {
@@ -1789,7 +1795,12 @@ background-size: 20px 37px;
 .scontent
 {
   position: absolute;
-  top:250px;
+  top:0;
+  left:0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top:350px;
 }
 #monstereyes
   {
