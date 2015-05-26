@@ -1166,12 +1166,12 @@ background-size: 20px 37px;
 {
   display:block;
   position: absolute;
-  width:120px;
-  height:120px;
+  width:150px;
+  height:150px;
   background-image: url('../img/h9.png');
 
   background-repeat: no-repeat;
-  background-size: 120px 120px;
+  background-size: 150px 150px;
 
 }
 .content
@@ -1208,9 +1208,10 @@ background-size: 20px 37px;
   width:auto;
   color: black;
   font-family: 'lvjack';
-  font-size: 15px;
+  font-size: 20px !important;
   margin-left:10px;
   bottom:200px;
+
 }
 .scontent p
 {
@@ -1218,20 +1219,20 @@ background-size: 20px 37px;
  width:80%;
  font-family: 'lvjack';
  color:black;
- font-size: 25px;
+ font-size: 35px !important;
 
 }
 .isun
 {
   display:block;
   position: absolute;
-  width:120px;
-  height:120px;
+  width:150px;
+  height:150px;
  
   
   background-image: url('../img/h10.png');
   background-repeat: no-repeat;
-  background-size: 120px 120px;
+  background-size: 150px 150px;
 
 }
 .chdes
@@ -1728,26 +1729,26 @@ background-size: 20px 37px;
 {
   display:block;
   position: absolute;
-  width:120px;
-  height:120px;
+  width:150px;
+  height:150px;
   background-image: url('../img/h9.png');
   left:50%;
-  margin-left: -100px;
+  margin-left: -75px;
   background-repeat: no-repeat;
-  background-size: 200px 200px;
+  background-size: 150px 150px;
 
 }
 .isun
 {
   display:block;
   position: absolute;
-  width:120px;
-  height:120px;
+  width:150px;
+  height:150px;
   background-image: url('../img/h10.png');
   left:50%;
-  margin-left: -100px;
+  margin-left: -75px;
   background-repeat: no-repeat;
-  background-size: 200px 200px;
+  background-size: 150px 150px;
 
 }
 .scontent
@@ -1758,7 +1759,7 @@ background-size: 20px 37px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 130px;
+  margin-top: 180px;
 
 }
 .chdes
@@ -1818,7 +1819,7 @@ background-size: 20px 37px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 130px;
+  margin-top: 180px;
 }
 #monstereyes
   {
@@ -1961,24 +1962,24 @@ background-size: 20px 37px;
 {
   display:block;
   position: absolute;
-  width:200px;
-  height:200px;
+  width:150px;
+  height:150px;
   background-image: url('../img/h9.png');
 
   background-repeat: no-repeat;
-  background-size: 200px 200px;
+  background-size: 150px 150px;
 
 }
 .isun
 {
   display:block;
   position: absolute;
-  width:120px;
-  height:120px;
+  width:150px;
+  height:150px;
   background-image: url('../img/h10.png');
 
   background-repeat: no-repeat;
-  background-size: 200px 200px;
+  background-size: 150px 150px;
 
 }
 .dumm
