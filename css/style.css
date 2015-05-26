@@ -309,7 +309,8 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-3 {
     background: #DE4C30
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-4 {
-    background: #121212
+    background: #355e3b
+    background-image:url('img/noisebg.png');
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-5 {
     background: #EBE88C
