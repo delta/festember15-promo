@@ -1174,6 +1174,10 @@ background-size: 20px 37px;
   background-size: 150px 150px;
 
 }
+.chdes{
+  font-family: 'lvjack';
+  font-size: 1.8em;
+}
 .content
 {
   overflow: hidden;
