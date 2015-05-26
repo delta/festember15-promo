@@ -4,6 +4,12 @@
   font-weight: 400;
   src: url('fonts/engel.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'lvjack';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/main.woff');
+}
 
 html {
     font-size: 100%;
@@ -1172,15 +1178,26 @@ background-size: 20px 37px;
 {
   overflow: hidden;
   height: auto;
+  font-family: 'lvjack';
   width:500px;
   margin-left:500px;
   margin-top:170px;
+}
+.ccontent
+{
+  overflow: hidden;
+  height: auto;
+  font-family: 'lvjack';
+  font-size: 40px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .content p
 {
  width:80%;
  color:white;
- font-size: 20px;
+ font-family: 'lvjack';
+ font-size: 25px !important;
 
 }
 .scontent
@@ -1190,7 +1207,7 @@ background-size: 20px 37px;
   height: auto;
   width:auto;
   color: black;
-  
+  font-family: 'lvjack';
   font-size: 15px;
   margin-left:10px;
   bottom:200px;
@@ -1199,8 +1216,9 @@ background-size: 20px 37px;
 {
   text-align: center;
  width:80%;
+ font-family: 'lvjack';
  color:black;
- font-size: 20px;
+ font-size: 25px;
 
 }
 .isun
@@ -1710,8 +1728,8 @@ background-size: 20px 37px;
 {
   display:block;
   position: absolute;
-  width:200px;
-  height:200px;
+  width:120px;
+  height:120px;
   background-image: url('../img/h9.png');
   left:50%;
   margin-left: -100px;
@@ -1723,8 +1741,8 @@ background-size: 20px 37px;
 {
   display:block;
   position: absolute;
-  width:200px;
-  height:200px;
+  width:120px;
+  height:120px;
   background-image: url('../img/h10.png');
   left:50%;
   margin-left: -100px;
@@ -1740,7 +1758,7 @@ background-size: 20px 37px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 250;
+  margin-top: 130px;
 
 }
 .chdes
@@ -1800,7 +1818,7 @@ background-size: 20px 37px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 250;
+  margin-top: 130px;
 }
 #monstereyes
   {
@@ -1955,8 +1973,8 @@ background-size: 20px 37px;
 {
   display:block;
   position: absolute;
-  width:200px;
-  height:200px;
+  width:120px;
+  height:120px;
   background-image: url('../img/h10.png');
 
   background-repeat: no-repeat;
