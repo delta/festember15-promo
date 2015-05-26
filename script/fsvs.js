@@ -10,22 +10,12 @@
 ;( function($){
 
 //media queries
-
-
-
-
-
-
-
 	$.fn.fsvs = function( options ) {
-
 		options = options || {};
-
 		/**
 		 * [defaults description]
 		 * @type {Object}
 		 */
-
 		var defaults = {
 			speed : 5000,
 			bodyID : 'fsvs-body',
@@ -43,12 +33,10 @@
 			nthClasses : false,
 			detectHash : true
 		};
-
 		for( var i in options ) {
 			defaults[i] = options[i];
 		}
 		options = defaults;
-
 		/**
 		 * [currentSlideIndex description]
 		 * @type {Number}
