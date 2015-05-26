@@ -51,7 +51,7 @@ $('.lidT').delay(1000).animate({
     })();
 
 
-
+/*
 
 	if( $.fn.fsvs ) {
 		var slider = $.fn.fsvs({
@@ -86,3 +86,4 @@ $('.lidT').delay(1000).animate({
 
 
 });
+*/
