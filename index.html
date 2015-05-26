@@ -92,7 +92,7 @@
 		      eyecontainer = "#" + eyecontainer;
 		      pupil = "#" + pupil;
 		      
-		      $(eyecontainer).css({left:eyeposx, top:eyeposy});
+		      $(eyecontainer).css({left:eyeposx-40, top:eyeposy-40});
 		      $(pupil).css({width:eyer*0.4,height:eyer*0.4});
 		      $(eyecontainer).css({width:eyer,height:eyer});
 		      $(pupil).css({position: 'relative', background: '#000000', 'border-radius':'50%'});
@@ -163,6 +163,7 @@
 		        // change 1 to alter damping/momentum - higher is slower
 		        xp += (mouseX - xp) / 1;
 		        yp += (mouseY - yp) / 1;
+		        
 		        pupil.css({left:xp, top:yp});    
 		      }, 1);
 		    };
@@ -278,7 +279,7 @@
 			</div>
 		</div>
 				<div class="slide nth-class-2">
-					<div id="monstereyes"></div>
+					<div id="monstereyes" ></div>
 					<div class="catHolder"> 
 		        	<span class="socket">
 		       			<span class="eye">
@@ -525,6 +526,7 @@
 			</div>
 
 			<div class="slide nth-class-5" style="margin:0;">
+			<div class="wwc">
 				<div class="sun spinner2"></div>
 				<div class="isun spinner2"></div>
 				<div class="button loading3"></div>
@@ -544,6 +546,7 @@
 					To perform at Festember<br>
 					Contact: <br>
 					Adithya +91 9786165231
+				</div>
 				</div>
 			</div>
 				

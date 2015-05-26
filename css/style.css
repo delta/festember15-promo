@@ -313,6 +313,7 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-4 {
     background-image:url('img/noisebg.png');
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-5 {
+  padding: 0;
     background: #EBE88C
 }
 html.fsvs.demo #fsvs-body>.slide pre {
@@ -328,7 +329,13 @@ html.fsvs.demo #fsvs-body>.slide pre {
 .bot {
   background: #99CCFF url('../img/monster.png') no-repeat left top;
 }
-
+#monstereyes
+{
+  position: relative;
+  top:0;
+  left: 0;
+  margin:0;
+}
 #title {
   margin-left: 490px;
   margin-top: 300px;
@@ -419,8 +426,8 @@ body.active-nth-slide-5 #fsvs-pagination li.active>span>span {
 }
 
 .slide.nth-class-5 {
-    background-image: url(".,/img/qm.gif");
-background-size: 20px 37px;
+   
+padding: 0;
     background-color: #cccccc;
 }
 @font-face {
@@ -577,7 +584,16 @@ background-size: 20px 37px;
   text-shadow: 0 1px 1px rgba(255,255,255,0.5);
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
+.wwc
+{
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  padding: 0;
+  width: 100%;
 
+}
 .st-wrapper nav span:first-child:before {
   content: "\4c";
 }
@@ -1065,11 +1081,11 @@ background-size: 20px 37px;
   font-family: sans-serif;
   text-align: center;
   line-height: 0px;
-  background-position:  0 100;
+  background-position:  0 100px;
     bottom: 0 !important;
 }
 .movit {
-  display: block;
+  display: block !important;
   position: absolute;
   left: 0;
   top:0;
@@ -1079,7 +1095,7 @@ background-size: 20px 37px;
   background-image: url("../img/png1.png");
   background-size: 1000px 400px;
   opacity: 0.4;
-  background-position: 0 0;
+  background-position: 0px 0px;
 }
 .button2 {
   display: block;
@@ -1213,6 +1229,7 @@ background-size: 20px 37px;
   width:auto;
   color: black;
   font-family: 'lvjack';
+  margin-top: 10px;
   font-size: 20px !important;
   margin-left:10px;
   bottom:200px;
@@ -1559,13 +1576,12 @@ background-size: 20px 37px;
 
 .anil
 {
-  -webkit-animation: anil 0.9s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: anil 0.9s; /* Firefox < 16 */
-        -ms-animation: anil 0.9s; /* Internet Explorer */
-         -o-animation: anil 0.9s; /* Opera < 12.1 */
-            animation: anil 0.9s;
-            -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
+  -webkit-animation: anil 0.9s forwards 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: anil 0.9s forwards 1s; /* Firefox < 16 */
+        -ms-animation: anil 0.9s forwards 1s; /* Internet Explorer */
+         -o-animation: anil 0.9s forwards 1s; /* Opera < 12.1 */
+            animation: anil 0.9s forwards 1s;
+            
 }
 @keyframes anil {
     0% { left:0;}
@@ -1661,6 +1677,7 @@ background-size: 20px 37px;
 
 #monstereyes
   {
+
     display: none;
   }
   html.fsvs.demo #fsvs-body>.slide.nth-class-2
