@@ -356,10 +356,10 @@ body.active-nth-slide-1 #fsvs-pagination li.active>span>span {
 body.active-nth-slide-2 header h1,
 body.active-nth-slide-2 header a,
 body.active-nth-slide-2 header a:visited {
-    color: #26a65b
+    color: #72286F
 }
 body.active-nth-slide-2 #fsvs-pagination li.active>span>span {
- 
+ background: #72286F
     
 }
 body.active-nth-slide-3 header h1,
@@ -373,20 +373,20 @@ body.active-nth-slide-3 #fsvs-pagination li.active>span>span {
 body.active-nth-slide-4 header h1,
 body.active-nth-slide-4 header a,
 body.active-nth-slide-4 header a:visited {
-    color: #121212
+    color: #2C3E50
 }
 body.active-nth-slide-4 #fsvs-pagination li.active>span>span {
-    background: #121212
+    background: #2C3E50
 }
 
 body.active-nth-slide-5 header h1,
 body.active-nth-slide-5 header a,
 body.active-nth-slide-5 header a:visited {
-    color: #2c4450
-}
+    color: transparent;
+  }
 body.active-nth-slide-5 #fsvs-pagination li.active>span>span {
         
-    background-color: #cccccc;
+    background-color: transparent;
 }
 
 .slide {
