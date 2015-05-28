@@ -114,13 +114,11 @@ li>ol {
   width: 50px;
   height: 50px;
  
-  float: right;
-  position: absolute;
+  
+  position: relative;
   margin: auto;
-  top: 0;
-  left: 220px;
-  right: 0;
-  bottom: 0;
+  
+  
 
 }
 .bmc
@@ -128,14 +126,10 @@ li>ol {
   display: none;
   width: 50px;
   height: 50px;
+ 
   
-  float: right;
-  position: absolute;
+  position: relative;
   margin: auto;
-  top: 0;
-  left: -220px;
-  right: 0;
-  bottom: 0;
 
 }
 .mcont
@@ -1636,6 +1630,57 @@ padding: 0;
 
 
 
+.anip
+{
+  -webkit-animation: anil 0.2s forwards 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: anil 0.2s forwards 2s; /* Firefox < 16 */
+        -ms-animation: anil 0.2s forwards 2s; /* Internet Explorer */
+         -o-animation: anil 0.2s forwards 2s; /* Opera < 12.1 */
+            animation: anil 0.2s forwards 2s;
+            
+}
+@keyframes anip {
+    0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes anip {
+     0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes anip {
+      0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes anip {
+    0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes anip {
+     0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+
+
+
 
 
 
@@ -1690,13 +1735,14 @@ padding: 0;
   }
   .content
   {
+     position: relative;
      overflow: hidden;
   height: auto;
-  position: absolute;
+ margin-top: 15px;
   width:90%;
-  margin-left: 5%;
+  margin-left: 0;
   font-size: 15px;
-  top:10px;
+  top:0;
   }
   .vi
   {
@@ -1724,7 +1770,7 @@ padding: 0;
 }
 .mcont
 {
-  position: absolute;
+  position: relative;
   width:180px !important;
   height:310px !important;
   left: 0;
@@ -1857,12 +1903,15 @@ padding: 0;
     display: block;
   }
    .content
-  {
+  { 
+
     overflow: hidden;
   height: auto;
-  position: absolute;
+   margin-top: 15px;
+  position: relative;
   width:90%;
-  margin-left: 5%;
+  top: 0;
+ margin-left: 0;
   font-size: 15px;
   top:10px;
   }
@@ -1923,13 +1972,13 @@ padding: 0;
 }
 .mcont
 {
-  position: absolute;
+  position: relative;
   width:180px !important;
   height:310px !important;
   left: 0;
   overflow: hidden;
   margin: auto;
-  top: 0;
+
   left: 0;
   right: 0; 
   bottom: 0;
