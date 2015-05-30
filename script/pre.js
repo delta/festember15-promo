@@ -78,7 +78,7 @@ function hereDoc(f) {
 		      eyecontainer = "#" + eyecontainer;
 		      pupil = "#" + pupil;
 		      
-		      $(eyecontainer).css({left:eyeposx, top:eyeposy});
+		      $(eyecontainer).css({left:eyeposx-40, top:eyeposy-40});
 		      $(pupil).css({width:eyer*0.4,height:eyer*0.4});
 		      $(eyecontainer).css({width:eyer,height:eyer});
 		      $(pupil).css({position: 'relative', background: '#000000', 'border-radius':'50%'});
