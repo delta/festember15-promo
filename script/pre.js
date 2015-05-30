@@ -52,6 +52,8 @@ function hereDoc(f) {
 		    preload.loadFile("img/sun.png");
 		    preload.loadFile("img/sun1.png");
 		    preload.loadFile("img/vinyl.png");
+		    preload.loadFile("img/png2.png");
+		    preload.loadFile("img/png3.png");
 		}
 		function handleComplete(){
 		window.location.href="#slide-1";
