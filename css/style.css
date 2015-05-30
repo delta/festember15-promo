@@ -114,13 +114,11 @@ li>ol {
   width: 50px;
   height: 50px;
  
-  float: right;
-  position: absolute;
+  
+  position: relative;
   margin: auto;
-  top: 0;
-  left: 220px;
-  right: 0;
-  bottom: 0;
+  
+  
 
 }
 .bmc
@@ -128,14 +126,10 @@ li>ol {
   display: none;
   width: 50px;
   height: 50px;
+ 
   
-  float: right;
-  position: absolute;
+  position: relative;
   margin: auto;
-  top: 0;
-  left: -220px;
-  right: 0;
-  bottom: 0;
 
 }
 .mcont
@@ -313,6 +307,7 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-4 {
     background-image:url('img/noisebg.png');
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-5 {
+  padding: 0;
     background: #EBE88C
 }
 html.fsvs.demo #fsvs-body>.slide pre {
@@ -328,7 +323,13 @@ html.fsvs.demo #fsvs-body>.slide pre {
 .bot {
   background: #99CCFF url('../img/monster.png') no-repeat left top;
 }
-
+#monstereyes
+{
+  position: relative;
+  top:0;
+  left: 0;
+  margin:0;
+}
 #title {
   margin-left: 490px;
   margin-top: 300px;
@@ -356,10 +357,10 @@ body.active-nth-slide-1 #fsvs-pagination li.active>span>span {
 body.active-nth-slide-2 header h1,
 body.active-nth-slide-2 header a,
 body.active-nth-slide-2 header a:visited {
-    color: #26a65b
+    color: #72286F
 }
 body.active-nth-slide-2 #fsvs-pagination li.active>span>span {
- 
+ background: #72286F
     
 }
 body.active-nth-slide-3 header h1,
@@ -373,20 +374,20 @@ body.active-nth-slide-3 #fsvs-pagination li.active>span>span {
 body.active-nth-slide-4 header h1,
 body.active-nth-slide-4 header a,
 body.active-nth-slide-4 header a:visited {
-    color: #121212
+    color: #2C3E50
 }
 body.active-nth-slide-4 #fsvs-pagination li.active>span>span {
-    background: #121212
+    background: #2C3E50
 }
 
 body.active-nth-slide-5 header h1,
 body.active-nth-slide-5 header a,
 body.active-nth-slide-5 header a:visited {
-    color: #2c4450
-}
+    color: transparent;
+  }
 body.active-nth-slide-5 #fsvs-pagination li.active>span>span {
         
-    background-color: #cccccc;
+    background-color: transparent;
 }
 
 .slide {
@@ -419,8 +420,8 @@ body.active-nth-slide-5 #fsvs-pagination li.active>span>span {
 }
 
 .slide.nth-class-5 {
-    background-image: url(".,/img/qm.gif");
-background-size: 20px 37px;
+   
+padding: 0;
     background-color: #cccccc;
 }
 @font-face {
@@ -577,7 +578,16 @@ background-size: 20px 37px;
   text-shadow: 0 1px 1px rgba(255,255,255,0.5);
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
+.wwc
+{
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+  padding: 0;
+  width: 100%;
 
+}
 .st-wrapper nav span:first-child:before {
   content: "\4c";
 }
@@ -1065,11 +1075,11 @@ background-size: 20px 37px;
   font-family: sans-serif;
   text-align: center;
   line-height: 0px;
-  background-position:  0 100;
+  background-position:  0 100px;
     bottom: 0 !important;
 }
 .movit {
-  display: block;
+  display: block !important;
   position: absolute;
   left: 0;
   top:0;
@@ -1079,7 +1089,7 @@ background-size: 20px 37px;
   background-image: url("../img/png1.png");
   background-size: 1000px 400px;
   opacity: 0.4;
-  background-position: 0 0;
+  background-position: 0px 0px;
 }
 .button2 {
   display: block;
@@ -1213,6 +1223,7 @@ background-size: 20px 37px;
   width:auto;
   color: black;
   font-family: 'lvjack';
+  margin-top: 10px;
   font-size: 20px !important;
   margin-left:10px;
   bottom:200px;
@@ -1559,13 +1570,12 @@ background-size: 20px 37px;
 
 .anil
 {
-  -webkit-animation: anil 0.9s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: anil 0.9s; /* Firefox < 16 */
-        -ms-animation: anil 0.9s; /* Internet Explorer */
-         -o-animation: anil 0.9s; /* Opera < 12.1 */
-            animation: anil 0.9s;
-            -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
+  -webkit-animation: anil 0.9s forwards 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: anil 0.9s forwards 1s; /* Firefox < 16 */
+        -ms-animation: anil 0.9s forwards 1s; /* Internet Explorer */
+         -o-animation: anil 0.9s forwards 1s; /* Opera < 12.1 */
+            animation: anil 0.9s forwards 1s;
+            
 }
 @keyframes anil {
     0% { left:0;}
@@ -1620,6 +1630,57 @@ background-size: 20px 37px;
 
 
 
+.anip
+{
+  -webkit-animation: anil 0.2s forwards 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: anil 0.2s forwards 2s; /* Firefox < 16 */
+        -ms-animation: anil 0.2s forwards 2s; /* Internet Explorer */
+         -o-animation: anil 0.2s forwards 2s; /* Opera < 12.1 */
+            animation: anil 0.2s forwards 2s;
+            
+}
+@keyframes anip {
+    0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes anip {
+     0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes anip {
+      0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+/* Internet Explorer */
+@-ms-keyframes anip {
+    0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+/* Opera < 12.1 */
+@-o-keyframes anip {
+     0% { display: none;}
+    
+    
+    100%{display: block;}
+}
+
+
+
+
 
 
 
@@ -1661,6 +1722,7 @@ background-size: 20px 37px;
 
 #monstereyes
   {
+
     display: none;
   }
   html.fsvs.demo #fsvs-body>.slide.nth-class-2
@@ -1673,13 +1735,14 @@ background-size: 20px 37px;
   }
   .content
   {
+     position: relative;
      overflow: hidden;
   height: auto;
-  position: absolute;
+ margin-top: 15px;
   width:90%;
-  margin-left: 5%;
+  margin-left: 0;
   font-size: 15px;
-  top:10px;
+  top:0;
   }
   .vi
   {
@@ -1707,7 +1770,7 @@ background-size: 20px 37px;
 }
 .mcont
 {
-  position: absolute;
+  position: relative;
   width:180px !important;
   height:310px !important;
   left: 0;
@@ -1758,8 +1821,9 @@ background-size: 20px 37px;
 }
 .scontent
 {
-  position: absolute;
+  position: relative;
   top:0;
+
   left:0;
   right: 0;
   margin-left: auto;
@@ -1818,7 +1882,7 @@ background-size: 20px 37px;
 }
 .scontent
 {
-  position: absolute;
+  position: relative;
   top:0;
   left:0;
   right: 0;
@@ -1839,12 +1903,15 @@ background-size: 20px 37px;
     display: block;
   }
    .content
-  {
+  { 
+
     overflow: hidden;
   height: auto;
-  position: absolute;
+   margin-top: 15px;
+  position: relative;
   width:90%;
-  margin-left: 5%;
+  top: 0;
+ margin-left: 0;
   font-size: 15px;
   top:10px;
   }
@@ -1905,13 +1972,13 @@ background-size: 20px 37px;
 }
 .mcont
 {
-  position: absolute;
+  position: relative;
   width:180px !important;
   height:310px !important;
   left: 0;
   overflow: hidden;
   margin: auto;
-  top: 0;
+
   left: 0;
   right: 0; 
   bottom: 0;

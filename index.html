@@ -12,14 +12,16 @@
 	<script src="script/countdown.js"></script>
     <script src="https://code.createjs.com/preloadjs-0.6.0.min.js"></script>
 	<script src="script/pre.js"></script>
+
 </head>
 
 
 <body class="active-slide-1 active-nth-slide-1" bgcolor="black" onload="preloadAll();">
 	<!--preload animation div starts-->
 			<div class="preload" style="display:block;">
-				<img src="img/l1.png" style="position: absolute;margin: auto;top: 0;left: 0;right: 0; bottom: 0;" class="anil limg floaty" width="100px" />
-				<img src="img/l2.png" style="position: absolute;margin: auto;top: 0;left: 0;right: 0; bottom: 0;" class="anis limg floaty " width="100px" />
+				<img src="img/l1.png" style="position: absolute;margin: auto;top: 30px;left: 0;right: 0; bottom: 0;" class="anil limg floaty" width="100px" />
+				<img src="img/l2.png" style="position: absolute;margin: auto;top: 30px;left: 0;right: 0; bottom: 0;" class="anis limg floaty " width="100px" />
+				<img src="img/spinner.gif" style="display:none;position: absolute;margin: auto;top: 130px;left: 0;right: 0; bottom: 0;" class="limg " width="100px" />
 			</div>
 			<!--preload animation div ends-->
 	<div id="fsvs-body" style="transition: all 1s; -webkit-transition: all 1s; -webkit-transform: translate3d(0px, -100%, 0px); transform: translate3d(0px, -100%, 0px);">
@@ -63,7 +65,7 @@
 			</div>
 		</div>
 				<div class="slide nth-class-2">
-					<div id="monstereyes"></div>
+					<div id="monstereyes" ></div>
 					<div class="catHolder"> 
 		        	<span class="socket">
 		       			<span class="eye">
@@ -74,20 +76,20 @@
 					</span>
 					<span class="socket">
 		        		<span class="eye">
-		       	    		<span class="lidT"></span>
+		       	    		<span class="lidT"> </span>
 							<span class="pup"></span>
 							<span class="lidB"></span>
 						</span>
 					</span>     
 				</div>
-				<div class  = "content" >
+				<center><div class  = "content" >
 					<p>
 						Every year without fail there are going to be 4 days of chaos, joy and unparalleled fun. Every year as Festember comes and goes there are highs and lows but in the end it is always about the show. <br><br>
 		                  Festember has its roots in the need for engineering students to head bang for something apart from unsolvable equations. It has now evolved into a fest that provides different forms of entertainment for all. This fest that happens every year in September is indeed something to remember.
 					</p>
-				</div>
+				</div></center>
 			</div>
-			<div class="slide nth-class-3" style="background-image:url('img/noisebg.png'); padding-top:20px !important">
+			<div class="slide nth-class-3" style="padding-top:20px !important">
 				<div class="movit"></div>
 				<center><img src="img/vinyl.png" class="vi spinner" width="120px" style=" position:relative;top:0;left:0;right:0;bottom:0;margin:auto;"/></center>
 				<div class="main">
@@ -112,7 +114,9 @@
 
 			<div class="slide nth-class-4" style="padding:5px;">
 				<div class="ccontent">The heartbeat and backbone of Festember '15</div>
-				<div class="mcont" style="">
+				<center><div class="bmc" id="downbutt" onclick="contdown()"></div></center>
+				
+				<center><div class="mcont" style="">
 
 					<div class="cdesc ease"><div class="chip" style="background-image:url('img/c4.png');"><img src="img/o1.png" class="spinner2"><img src="img/o2.png" class="spinner2">
 					<div class="cont" style="background-image:url('img/cont/Santy_thumbnail.jpg');"></div></div>
@@ -305,11 +309,13 @@
 					</div>
  -->					
 				</div>
-				<div class="fmc rev" id="upbutt" onclick="contup()"></div>
-				<div class="bmc" id="downbutt" onclick="contdown()"></div>
+				</center>
+				<center><div class="fmc rev" id="upbutt" onclick="contup()"></div></center>
+				
 			</div>
 
 			<div class="slide nth-class-5" style="margin:0;">
+			<div class="wwc">
 				<div class="sun spinner2"></div>
 				<div class="isun spinner2"></div>
 				<div class="button loading3"></div>
@@ -329,6 +335,7 @@
 					To perform at Festember<br>
 					Contact: <br>
 					Adithya +91 9786165231
+				</div>
 				</div>
 			</div>
 				
