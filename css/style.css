@@ -297,7 +297,7 @@ html.fsvs.demo #fsvs-body>.slide.nth-class-1 {
     background: #F97F06
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-2 {
-   background: #72286F url('../img/monster.png') no-repeat left top;
+  background: #72286F url('../img/monster.png') no-repeat left top;
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-3 {
     background: #DE4C30
@@ -408,7 +408,8 @@ body.active-nth-slide-5 #fsvs-pagination li.active>span>span {
 }
 
 .slide.nth-class-2 {
-    background: #72286F url('../img/monster.png') no-repeat left top;
+  background: #72286F url('../img/monster.png') no-repeat left top;
+    background: #72286F ;
 }
 
 .slide.nth-class-3 {
@@ -1091,6 +1092,47 @@ padding: 0;
   opacity: 0.4;
   background-position: 0px 0px;
 }
+.movit2 {
+  display: block !important;
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/png2.png");
+  background-size: 1000px 400px;
+  opacity: 0.4;
+  background-position: 0px 0px;
+}
+.mon
+{
+  display: block !important;
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  
+  
+  background-position: 0px 0px;
+   background: transparent url('../img/monster.png') no-repeat left top;
+}
+.movit3 {
+  display: block !important;
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/png3.png");
+  background-size: 1000px 400px;
+  opacity: 0.4;
+  background-position: 0px 0px;
+}
+
 .button2 {
   display: block;
   position: absolute;
@@ -1195,7 +1237,7 @@ padding: 0;
   height: auto;
   font-family: 'lvjack';
   width:500px;
-  margin-left:500px;
+  margin-left:180px;
   margin-top:170px;
 }
 .ccontent
@@ -1768,6 +1810,21 @@ padding: 0;
   position: absolute;
   background-image: none;
 }
+.movit2 {
+  display: none;
+  position: absolute;
+  background-image: none;
+}
+.movit3 {
+  display: none;
+  position: absolute;
+  background-image: none;
+}
+.mon {
+  display: none;
+  position: absolute;
+  background-image: none;
+}
 .mcont
 {
   position: relative;
@@ -1959,6 +2016,21 @@ padding: 0;
  
 }
   .movit {
+  display: none;
+  position: absolute;
+  background-image: none;
+}
+.movit2 {
+  display: none;
+  position: absolute;
+  background-image: none;
+}
+.movit3 {
+  display: none;
+  position: absolute;
+  background-image: none;
+}
+.mon {
   display: none;
   position: absolute;
   background-image: none;
