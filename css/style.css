@@ -1353,10 +1353,13 @@ color: inherit;
   left: 0;
   right: 0;
   margin: auto;
-
+  color: red !important;
   position:absolute;
   bottom:5px;
 
+}
+.footer > a {
+    color: red !important;
 }
 .ico
 {
