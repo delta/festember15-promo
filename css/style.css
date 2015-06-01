@@ -675,6 +675,66 @@ padding: 0;
     transform: rotate(180deg);
 
 }
+.menud
+{
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  z-index: 9999;
+  margin: 0;
+  padding-left: 0;
+  position: fixed ;
+  height: 30px !important;
+   background: transparent;
+  width: 30px !important;
+  overflow: hidden;
+  color: #fff;
+  top:50%;
+  margin-top: -7px;
+  right:60px;
+  cursor: pointer;
+}
+.menud:hover
+{
+-webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  height: 140px!important;
+  width: 100px !important;
+  background: #fff;
+  margin-top: -65px;
+  color: #2C2C2A;
+}
+.menud:hover .fa
+{
+  display: none;
+}
+.menud a
+{
+text-decoration: none;
+color: inherit;
+
+}
+.menud div
+{
+  padding:0;
+  margin: 0;
+  width: 100%;
+  height: 28px !important;
+  line-height: 28px;
+  text-align: center;
+}
+.menud div:hover
+{
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+ background: #2C2C2A;
+ color: #fff;
+}
 .slot
 {
   width:900px;
@@ -780,16 +840,34 @@ padding: 0;
   -webkit-animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-name: Floating;
+  -moz-animation-name: Floatingx;
   -moz-animation-duration: 5s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: ease-in-out;
-  -ms-animation-name: Floating;
+  -ms-animation-name: Floatingx;
   -ms-animation-duration: 5s;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: ease-in-out;
-  animation-name: Floating;
+  animation-name: Floatingx;
   animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.floatyy {
+  -webkit-animation-name: Floatingy;
+  -webkit-animation-duration: 0.9s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floatingy;
+  -moz-animation-duration: 0.9s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-name: Floatingy;
+  -ms-animation-duration: 0.9s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: ease-in-out;
+  animation-name: Floatingy;
+  animation-duration: 0.9s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -800,15 +878,15 @@ padding: 0;
   -webkit-animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-name: Floating;
+  -moz-animation-name: Floatingx;
   -moz-animation-duration: 8s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: ease-in-out;
-  -ms-animation-name: Floating;
+  -ms-animation-name: Floatingx;
   -ms-animation-duration: 8s;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: ease-in-out;
-  animation-name: Floating;
+  animation-name: Floatingx;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -820,15 +898,15 @@ padding: 0;
   -webkit-animation-duration: 12s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-name: Floating;
+  -moz-animation-name: Floatingx;
   -moz-animation-duration: 12s;
   -moz-animation-iteration-count: infinite;
   -moz-animation-timing-function: ease-in-out;
-  -ms-animation-name: Floating;
+  -ms-animation-name: Floatingx;
   -ms-animation-duration: 12s;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: ease-in-out;
-  animation-name: Floating;
+  animation-name: Floatingx;
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -894,6 +972,73 @@ padding: 0;
   /* line 274, ../scss/vd.scss */
   65% {
     transform: translate(0, 15px);
+  }
+
+  /* line 275, ../scss/vd.scss */
+  to {
+    transform: translate(0, 0px);
+  }
+}
+@-webkit-keyframes Floatingy {
+  /* line 255, ../scss/vd.scss */
+  from {
+    -webkit-transform: translate(0, 0px);
+  }
+
+  /* line 256, ../scss/vd.scss */
+  65% {
+    -webkit-transform: translate(5px, 0px);
+  }
+
+  /* line 257, ../scss/vd.scss */
+  to {
+    -webkit-transform: translate(0, 0px);
+  }
+}
+
+@-moz-keyframes Floatingy {
+  /* line 261, ../scss/vd.scss */
+  from {
+    -moz-transform: translate(0, 0px);
+  }
+
+  /* line 262, ../scss/vd.scss */
+  65% {
+    -moz-transform: translate(5px, 0px);
+  }
+
+  /* line 263, ../scss/vd.scss */
+  to {
+    -moz-transform: translate(0, 0px);
+  }
+}
+
+@-ms-keyframes Floatingy {
+  /* line 267, ../scss/vd.scss */
+  from {
+    -ms-transform: translate(0, 0px);
+  }
+
+  /* line 268, ../scss/vd.scss */
+  65% {
+    -ms-transform: translate(5px, 0px);
+  }
+
+  /* line 269, ../scss/vd.scss */
+  to {
+    -ms-transform: translate(0, 0px);
+  }
+}
+
+@keyframes Floatingy {
+  /* line 273, ../scss/vd.scss */
+  from {
+    transform: translate(0, 0px);
+  }
+
+  /* line 274, ../scss/vd.scss */
+  65% {
+    transform: translate(5px, 0px);
   }
 
   /* line 275, ../scss/vd.scss */
@@ -1795,6 +1940,10 @@ html.fsvs #fsvs-pagination li>span>span>span {
 
 
 @media only screen and (max-width: 999px) {
+  .menud
+  {
+    display: none;
+  }
 .button 
 {
   background-image: none;
@@ -2194,5 +2343,9 @@ html.fsvs #fsvs-pagination li>span>span>span {
 {
   display: none;
 }
+ .menud
+  {
+    display: none;
+  }
 }
 
