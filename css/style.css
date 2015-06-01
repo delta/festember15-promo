@@ -2003,7 +2003,7 @@ html.fsvs #fsvs-pagination li>span>span>span {
  margin-top: 15px;
   width:90%;
   margin-left: 0;
-  font-size: 15px;
+  font-size: 10px;
   top:0;
   }
   .vi
@@ -2022,7 +2022,7 @@ html.fsvs #fsvs-pagination li>span>span>span {
 {
  width:80%;
  color:white;
- font-size: 15px !important;
+ font-size: 10px !important;
 
 }
 .movit {
@@ -2060,13 +2060,13 @@ html.fsvs #fsvs-pagination li>span>span>span {
 }
 .bmc
 {
-  display: block;
+  display: inline-block;
   background-image: url('../img/arr.png');
   background-size: cover;
 }
 .fmc
 {
-  display: block;
+  display: inline-block;
   background-image: url('../img/arr.png');
   background-size: cover;
 }
@@ -2189,7 +2189,7 @@ html.fsvs #fsvs-pagination li>span>span>span {
   width:90%;
   top: 0;
  margin-left: 0;
-  font-size: 15px;
+  font-size: 10px;
   top:10px;
   }
   .vi
@@ -2259,7 +2259,7 @@ html.fsvs #fsvs-pagination li>span>span>span {
 {
  width:80%;
  color:white;
- font-size: 15px !important;
+ font-size: 10px !important;
 
 }
 .mcont
@@ -2312,13 +2312,13 @@ html.fsvs #fsvs-pagination li>span>span>span {
 
 .bmc
 {
-  display: block;
+  display: inline-block;
   background-image: url('../img/arr.png');
   background-size:cover;
 }
 .fmc
 {
-  display: block;
+  display: inline-block;
   background-image: url('../img/arr.png');
   background-size: cover;
 }
