@@ -1485,16 +1485,20 @@ html.fsvs #fsvs-pagination li>span>span>span {
   font-size: 20px !important;
   margin-left:10px;
   bottom:200px;
+  position: relative;
+  z-index: 100;
+  margin-top: 20%;
 
 }
 .scontent p
 {
   text-align: center;
- width:80%;
- font-family: 'lvjack';
- color:black;
- font-size: 35px !important;
-
+  width:80%;
+  font-family: 'lvjack';
+  color:black;
+  font-size: 35px !important;
+  position: relative;
+  z-index: 100;
 }
 .isun
 {
