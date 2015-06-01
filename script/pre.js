@@ -174,11 +174,12 @@ function hereDoc(f) {
 		    var eye = new DrawEye("eye50", "pupil50", 211, 277, 33);
 		    var eye = new DrawEye("eye51", "pupil51", 338, 304, 30);
 
-			$('.pagination-link > span > span')[0].innerHTML="<span class='pagination-text'>Home</span>"
+			/*$('.pagination-link > span > span')[0].innerHTML="<span class='pagination-text' id='pt'>sds</span>"
+			$('.pagination-link > span > span > span')[0].innerHTML="sdsd";
 			$('.pagination-link > span > span')[1].innerHTML="<span class='pagination-text'>About</span>"
 			$('.pagination-link > span > span')[2].innerHTML="<span class='pagination-text'>Gallery</span>"
 			$('.pagination-link > span > span')[3].innerHTML="<span class='pagination-text'>Contacts</span>"
-			$('.pagination-link > span > span')[4].innerHTML="<span class='pagination-text'>Sponsorships</span>"
+			$('.pagination-link > span > span')[4].innerHTML="<span class='pagination-text'>Sponsorships</span>"*/
 
 		    //end of eye
 		    setTimeout(function (){

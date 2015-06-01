@@ -367,7 +367,7 @@
 				pagination = $('<ul id="fsvs-pagination"></ul>');
 				$( options.selector, body ).each( function(i) {
 					var linkClass = currentSlideIndex === i ? 'pagination-link active' : 'pagination-link';
-					$('<li class="' + linkClass + '"><span><span></span></span></li>').appendTo( pagination );
+					$('<li class="' + linkClass + '"><span><span><span>bla</span></span></span></li>').appendTo( pagination );
 				});
 				if( $('#fsvs-pagination').length !== 0 ) {
 					$('#fsvs-pagination').remove();
@@ -390,6 +390,10 @@
 					$('.active', pagination).removeClass( 'active' );
 					$(this).addClass( 'active' );
 					app.slideToIndex( $(this).index(), e );
+					if(currentSlideIndex==1)
+			 {
+			 	$('.pagination-text').innerHTML="Home";
+			 }
 				});
 			},
 
@@ -475,6 +479,50 @@
 				} else {
 					jQuerySlide( index );
 				}
+				$('.pagination-link > span > span > span')[0].style.display="none";
+				$('.pagination-link > span > span > span')[1].style.display="none";
+				$('.pagination-link > span > span > span')[2].style.display="none";
+				$('.pagination-link > span > span > span')[3].style.display="none";
+				$('.pagination-link > span > span > span')[4].style.display="none";
+
+				$('.pagination-link > span > span > span')[index].style.display="block";
+			
+				if(index==0)
+				{
+					
+					$('.pagination-link > span > span > span')[0].innerHTML="Home";
+					
+				}else
+				if(index==1)
+				{
+					$('.pagination-link > span > span > span')[1].innerHTML="About";
+					
+
+				}else
+				if(index==2)
+				{
+					
+					$('.pagination-link > span > span > span')[2].innerHTML="Gallery";
+				
+
+				}else
+				if(index==3)
+				{
+		
+					$('.pagination-link > span > span > span')[3].innerHTML="Contacts";
+					
+
+				}else
+				if(index==4)
+				{
+					
+					$('.pagination-link > span > span > span')[4].innerHTML="Sponsors";
+					
+				
+
+				}
+				
+				
 			},
 
 			/**

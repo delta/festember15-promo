@@ -293,6 +293,10 @@ html.fsvs.demo #fsvs-body>.slide p {
     line-height: 1.09091;
     color: white
 }
+html.fsvs.demo #fsvs-body>.slide a {
+    
+    color: blue !important;
+}
 html.fsvs.demo #fsvs-body>.slide.nth-class-1 {
     background: #F97F06
 }
@@ -404,7 +408,7 @@ body.active-nth-slide-5 #fsvs-pagination li.active>span>span {
 }
 
 .slide.nth-class-1 {
-    background: #F97F06
+    background: #F97F06;
 }
 
 .slide.nth-class-2 {
@@ -1199,6 +1203,66 @@ padding: 0;
   background-position: 0 0;
     bottom: 0 !important;
 }
+.footer
+{
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  position:absolute;
+  bottom:5px;
+
+}
+.ico
+{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  opacity: 0.7;
+  padding: 0;
+  margin: 0;
+ 
+  cursor: pointer;
+}
+.ico:hover
+{
+  opacity: 1;
+}
+.fbi
+{
+  background-image: url('../img/ico.png') ;
+  background-size: 99px 99px;
+  background-position: -1px -99px;
+}
+.ins
+{
+  background-image: url('../img/ico.png') ;
+  background-size: 99px 99px;
+  background-position: -35px -99px;
+}
+.twt
+{
+  background-image: url('../img/ico.png') ;
+  background-size: 99px 99px;
+  background-position: -68px -35px;
+}
+
+html.fsvs #fsvs-pagination li>span>span>span {
+  position: absolute;
+  margin: 0;
+  left: -3px;
+  top: 50%;
+  margin-top: -50%;
+  width:100px;
+  height: 30px;
+  line-height: 30px;
+  background: #EBE88C;
+  -ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    transform: rotate(90deg);
+
+  }
 .button6 {
   display: block;
   position: absolute;
@@ -1245,7 +1309,7 @@ padding: 0;
   overflow: hidden;
   height: auto;
   font-family: 'lvjack';
-  font-size: 40px !important;
+  font-size: 30px !important;
   padding-top: 10px;
   padding-bottom: 10px;
 }
