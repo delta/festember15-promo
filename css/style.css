@@ -1356,10 +1356,14 @@ color: inherit;
   color: red !important;
   position:absolute;
   bottom:5px;
+  font-family: 'lvjack';
 
 }
 .footer > a {
     color: red !important;
+}
+.menud, #fsvs-pagination{
+  font-family: 'lvjack';
 }
 .ico
 {
