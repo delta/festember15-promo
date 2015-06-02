@@ -726,6 +726,9 @@ color: inherit;
   line-height: 28px;
   text-align: center;
 }
+.scontent > a:link {
+  color: red !important;
+}
 .menud div:hover
 {
   -webkit-transition: all 0.25s ease-in-out;
