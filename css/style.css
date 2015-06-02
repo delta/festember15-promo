@@ -295,7 +295,7 @@ html.fsvs.demo #fsvs-body>.slide p {
 }
 html.fsvs.demo #fsvs-body>.slide a {
     
-    color: blue !important;
+    
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-1 {
     background: #F97F06
@@ -1492,6 +1492,10 @@ html.fsvs #fsvs-pagination li>span>span>span {
   z-index: 100;
   margin-top: 20%;
 
+}
+.scontent a
+{
+  color: red;
 }
 .scontent p
 {
