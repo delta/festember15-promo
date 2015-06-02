@@ -295,7 +295,7 @@ html.fsvs.demo #fsvs-body>.slide p {
 }
 html.fsvs.demo #fsvs-body>.slide a {
     
-    
+    color: red !important;
 }
 html.fsvs.demo #fsvs-body>.slide.nth-class-1 {
     background: #F97F06
